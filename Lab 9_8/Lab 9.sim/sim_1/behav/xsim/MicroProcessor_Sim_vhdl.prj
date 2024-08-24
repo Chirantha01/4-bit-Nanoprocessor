@@ -1,0 +1,25 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../Lab 9.srcs/sources_1/ip/AddSubUnit/AddSubUnit_sim_netlist.vhdl" \
+"../../../../Lab 9.srcs/sources_1/imports/new/Decoder_3_to_8.vhd" \
+"../../../../Lab 9.srcs/sources_1/new/Incrementer.vhd" \
+"../../../../Lab 9.srcs/sources_1/imports/new/LUT_16_7.vhd" \
+"../../../../Lab 9.srcs/sources_1/new/MicroProcessor.vhd" \
+"../../../../Lab 9.srcs/sources_1/new/Mux_8_Way_Double.vhd" \
+"../../../../Lab 9.srcs/sources_1/new/Program_Counter.vhd" \
+"../../../../Lab 9.srcs/sources_1/new/ROM.vhd" \
+"../../../../Lab 9.srcs/sources_1/imports/new/Reg.vhd" \
+"../../../../Lab 9.srcs/sources_1/new/Register_Bank.vhd" \
+"../../../../Lab 9.srcs/sources_1/new/Slow_Clock.vhd" \
+"../../../../Lab 9.srcs/sources_1/new/mux_2_to_3.vhd" \
+"../../../../Lab 9.srcs/sources_1/new/mux_2_to_4.vhd" \
+
+vhdl2008 xil_defaultlib  \
+"../../../../Lab 9.srcs/sources_1/new/Arithmatic_Unit.vhd" \
+"../../../../Lab 9.srcs/sources_1/new/Instruction_Decoder.vhd" \
+
+vhdl xil_defaultlib  \
+"../../../../Lab 9.srcs/sim_1/new/MicroProcessor_Sim.vhd" \
+
+# Do not sort compile order
+nosort

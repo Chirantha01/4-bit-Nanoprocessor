@@ -1,0 +1,8 @@
+Instructions
+--------------------
+
+01. Nano processor starts executing the instructions stored in the program rom upon programming Basys3 board.
+02. Reset button is mapped to the U18 button.
+03. When Reset button is pressed, program counter is set to 000 and starts over.
+04. The value in R7 is represented by left most four LEDs (led0 - led3) and the leftmost seven segment display.
+05. Overflow and Zero is mapped to two rightmost (Overflow to led15 and Zero to led14) LEDs.

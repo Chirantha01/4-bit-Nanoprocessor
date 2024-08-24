@@ -1,0 +1,4 @@
+NumberHits:0
+Timestamp: Thu Aug 18 01:02:24 UTC 2022
+VLNV: xilinx.com:ip:c_addsub:12.0
+SynthRuntime: 32

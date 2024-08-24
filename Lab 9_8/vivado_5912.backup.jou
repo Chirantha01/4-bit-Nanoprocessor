@@ -1,0 +1,61 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Sun Jun 11 20:28:43 2023
+# Process ID: 5912
+# Current directory: D:/vivado/Team_50/Lab 9_8
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent22604 D:\vivado\Team_50\Lab 9_8\Lab 9.xpr
+# Log file: D:/vivado/Team_50/Lab 9_8/vivado.log
+# Journal file: D:/vivado/Team_50/Lab 9_8\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {D:/vivado/Team_50/Lab 9_8/Lab 9.xpr}
+update_compile_order -fileset sources_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+open_run impl_1
+launch_simulation
+source MicroProcessor_Sim.tcl
+current_wave_config {Untitled 1}
+add_wave {{/MicroProcessor_Sim/MicroProcessor_0/instruction_decoder_1/ins}} 
+current_wave_config {Untitled 1}
+add_wave {{/MicroProcessor_Sim/MicroProcessor_0/slow_clock_1}} 
+current_wave_config {Untitled 1}
+add_wave {{/MicroProcessor_Sim/MicroProcessor_0/led_lut}} 
+current_wave_config {Untitled 1}
+add_wave {{/MicroProcessor_Sim/MicroProcessor_0/program_counter_1}} 
+save_wave_config {D:/vivado/Team_50/Lab 9_8/MicroProcessor_Sim_behav.wcfg}
+add_files -fileset sim_1 -norecurse {{D:/vivado/Team_50/Lab 9_8/MicroProcessor_Sim_behav.wcfg}}
+set_property xsim.view {{D:/vivado/Team_50/Lab 9_8/micro_p_sim_behav.wcfg} {D:/vivado/Team_50/Lab 9_8/micro_p_sim_behav1.wcfg} {D:/vivado/Team_50/Lab 9_8/micro_p_sim_behav.wcfg} {D:/vivado/Team_50/Lab 9_8/MicroProcessor_Sim_behav.wcfg}} [get_filesets sim_1]
+close_sim
+launch_simulation
+open_wave_config {D:/vivado/Team_50/Lab 9_8/MicroProcessor_Sim_behav.wcfg}
+source MicroProcessor_Sim.tcl
+current_wave_config {MicroProcessor_Sim_behav.wcfg}
+add_wave {{/MicroProcessor_Sim/MicroProcessor_0/slow_clock_1/Clk_out}} 
+current_wave_config {MicroProcessor_Sim_behav.wcfg}
+add_wave {{/MicroProcessor_Sim/MicroProcessor_0/incrementer_1}} 
+current_wave_config {MicroProcessor_Sim_behav.wcfg}
+add_wave {{/MicroProcessor_Sim/MicroProcessor_0/mux2to3_1}} 
+current_wave_config {MicroProcessor_Sim_behav.wcfg}
+add_wave {{/MicroProcessor_Sim/MicroProcessor_0/program_counter_1}} 
+current_wave_config {MicroProcessor_Sim_behav.wcfg}
+add_wave {{/MicroProcessor_Sim/MicroProcessor_0/rom_1}} 
+current_wave_config {MicroProcessor_Sim_behav.wcfg}
+add_wave {{/MicroProcessor_Sim/MicroProcessor_0/instruction_decoder_1}} 
+current_wave_config {MicroProcessor_Sim_behav.wcfg}
+add_wave {{/MicroProcessor_Sim/MicroProcessor_0/mux2to4_1}} 
+current_wave_config {MicroProcessor_Sim_behav.wcfg}
+add_wave {{/MicroProcessor_Sim/MicroProcessor_0/register_bank_1}} 
+current_wave_config {MicroProcessor_Sim_behav.wcfg}
+add_wave {{/MicroProcessor_Sim/MicroProcessor_0/mux_8_way_double_1}} 
+current_wave_config {MicroProcessor_Sim_behav.wcfg}
+add_wave {{/MicroProcessor_Sim/MicroProcessor_0/led_lut}} 
+save_wave_config {D:/vivado/Team_50/Lab 9_8/MicroProcessor_Sim_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config {D:/vivado/Team_50/Lab 9_8/MicroProcessor_Sim_behav.wcfg}
+source MicroProcessor_Sim.tcl
+save_wave_config {D:/vivado/Team_50/Lab 9_8/MicroProcessor_Sim_behav.wcfg}
+close_sim
